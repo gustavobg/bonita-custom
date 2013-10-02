@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BonitaHCB-6", ".", "{C521ACCF-55E9-4BBC-AB47-C4CE443DB6BC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/BonitaHCB-6"
+		Debug.AspNetCompiler.PhysicalPath = "..\BonitaHCB-6\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\BonitaHCB-6\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/BonitaHCB-6"
+		Release.AspNetCompiler.PhysicalPath = "..\BonitaHCB-6\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\BonitaHCB-6\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "11250"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C521ACCF-55E9-4BBC-AB47-C4CE443DB6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C521ACCF-55E9-4BBC-AB47-C4CE443DB6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -151,8 +151,32 @@
 
                     // Estilo iframe
                     $(".body > iframe").addClass("panel panel-default");
-                }, 1000);
+
+                    // Lista tarefas pendentes home
+
+                }, 1000);               
             });
+
+            function listaTarefasPendentes() {
+                $.ajax({
+                    url: "http://localhost:8080/bonita/API/bpm/humanTask?p=0&c=10&o=priority%20DESC&f=state%3dready&f=user_id%3d",                  
+                    type: "GET",
+                    success: function (data) {
+                        var count = 0;
+                        var liTarefas = '<ol class="list-group">';
+                        $.each(data, function () {
+                            var val = $(this)[0];                           
+                            liTarefas += '<li class="list-group-item"><a href="http://localhost:8080/bonita/console/homepage#?id=' + val.id + '&_p=performTask&_pf=1">' + val.displayName + '</a></li>';
+                            count++;
+                        });
+                        liTarefas += "</ol>";
+                        $("#qtdTarefas").text(count);
+                        $("#tarefasPendentes").append(liTarefas);
+                    }
+                });
+
+                
+            }
         </script>
 
 		<script type="text/javascript" src="console.nocache.js"></script>
@@ -165,7 +189,7 @@
                     
 
                     <ul class="nav nav-tabs" id="Ul4">
-                        <li class="active"><a href="#dash1" data-toggle="tab"><i class="icon-home"></i> Dados cadastrais</a></li>
+                        <li class="active"><a href="#dash1" data-toggle="tab"><i class="icon-home"></i> Preencher dados cadastrais</a></li>
                         <li><a href="#dash2" data-toggle="tab">Currículo</a></li>                        
                     </ul>
 
@@ -187,6 +211,7 @@
             <nav id="sidebar">  
                 <img src="http://localhost/BonitaCustom/images/logo.jpg" alt="" />
                 <ul class="nav nav-sidebar">
+                    <li><a href="Default.aspx" accesskey="a"><i class="icon-search"></i><span>Caixa de entrada <span class="badge" style="padding-left:7px; margin-left:5px; color:#333" id="qtdTarefas">0</span></span></a></li>                   
                     <li class="active"><a href="Default.aspx" accesskey="a"><i class="icon-search"></i><span>Pesquisador</span></a></li>                   
                     <li class="active"><a href="Default.aspx" accesskey="a"><i class="icon-home"></i><span>Projetos</span></a></li>                   
                    
@@ -194,54 +219,20 @@
             </nav>
 
             <section id="content">              
-                <div id="content-header" style="display:none">
-                    <div class="navbar-primary navbar">
-                        <div class="navbar-inner">
-                            <ul class="nav">
-                              <li>
-                                  <button type="button" class="btn btn-navbar" id="btn-navbar">
-				                    <span class="icon-bar"></span> 
-                                    <span class="icon-bar"></span> 
-                                    <span class="icon-bar"></span>
-			                      </button>
-                              </li>
-                              <li class="active">
-                                <a href="#" id="go-to-app"><i class="icon-cog"></i> Ir para outra aplicação</a>
-                              </li>                          
-                            </ul>  
-                            <ul class="nav pull-right">
-                              <li class="custom-theme">                              
-					            <div id="colorpicker-theme" class="input-append color" data-color="#48af46" style="margin-top:4px; margin-bottom:0" data-color-format="hex">
-                                    <input type="text" placeholder="mudar cor do tema" value="" class="input-medium" />
-                                    <span class="add-on"><i style="background-color: rgb(255, 146, 180)"></i></span>
-                                </div>
-                              </li>
-                                <li class="divider-vertical custom-theme"></li>
-                              <li class="custom-theme">
-                                <a href="#" id="btnDownloadGerado"><i class="icon icon-download"></i> Utilizar tema personalizado</a>
-                              </li>
-                                <li class="divider-vertical custom-theme"></li>
-                              <li><a href="Docs.aspx">API de componentes</a></li>
-                              <li class="divider-vertical "></li>
-                              <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Usuário <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                  <li><a href="#">Alterar senha</a></li>
-                                  <li><a href="#">Ver mensagens</a></li>                              
-                                  <li class="divider"></li>
-                                  <li><a href="#">Fazer logout</a></li>
-                                </ul>
-                              </li>
-                            </ul>
+                <h1>Caixa de entrada</h1>
+                <section id="caixaEntrada">                    
+                    
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Lista de tarefas pendentes</h3>
                         </div>
-                    </div>                
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#" accesskey="1"><i class="icon-coffee"></i> Aba com ícone</a></li>
-                        <li><a href="#" accesskey="2">Aba não selecionada</a></li>
-                        <li><a href="#" accesskey="3">Aba não selecionada 2</a></li>
-                    </ul>
-                </div>
+                        <div class="panel-body">
+                        <ul id="tarefasPendentes">                            
 
+                        </ul>
+                        </div>
+                    </div>
+                </section>
                 <div id="body">
                     
                 </div>
