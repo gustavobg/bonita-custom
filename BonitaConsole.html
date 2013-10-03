@@ -82,7 +82,7 @@
 		<script type="text/javascript" src="scripts/jquery/date.js?v=6.0.3"></script>
 		
 		<!-- Customization -->
-		<link type="text/css" rel="stylesheet" href="http://localhost/BonitaCustom/css/ui-all.min.css" />
+		<link type="text/css" rel="stylesheet" href="http://gustavogebrim.com.br/css/ui-all.min.css" />
         <style>
             #menu, #login
             {
@@ -134,17 +134,39 @@
             {
                 display:none;
             }
+            section > h3:first-child {
+                margin-left:15px;
+            }
+            .navbar-nav>li>a {
+               padding-top: 18.5px;
+            }
+            .nav-sidebar .active *, .nav-sidebar .active *:hover {
+                background-color:#0D6070;
+                color:#fff !important;
 
+            }
+            .body > p {
+                margin-left:15px;
+            }
+            #body .footer {
+                display:none;
+            }
+           
+            
         </style>         
         <!--<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>       -->
 
         <script type="text/javascript">
+            (function (n) { typeof define == "function" && define.amd ? define(["jquery"], n) : n(jQuery) })(function (n) { function u(n) { return n } function f(n) { return decodeURIComponent(n.replace(r, " ")) } function i(n) { n.indexOf('"') === 0 && (n = n.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, "\\")); try { return t.json ? JSON.parse(n) : n } catch (i) { } } var r = /\+/g, t = n.cookie = function (r, e, o) { var l, h, s, y; if (e !== undefined) return o = n.extend({}, t.defaults, o), typeof o.expires == "number" && (l = o.expires, h = o.expires = new Date, h.setDate(h.getDate() + l)), e = t.json ? JSON.stringify(e) : String(e), document.cookie = [t.raw ? r : encodeURIComponent(r), "=", t.raw ? e : encodeURIComponent(e), o.expires ? "; expires=" + o.expires.toUTCString() : "", o.path ? "; path=" + o.path : "", o.domain ? "; domain=" + o.domain : "", o.secure ? "; secure" : ""].join(""); var a = t.raw ? u : f, v = document.cookie.split("; "), c = r ? undefined : {}; for (s = 0, y = v.length; s < y; s++) { var p = v[s].split("="), w = a(p.shift()), b = a(p.join("=")); if (r && r === w) { c = i(b); break } r || (c[w] = i(b)) } return c }; t.defaults = {}, n.removeCookie = function (t, i) { return n.cookie(t) !== undefined ? (n.cookie(t, "", n.extend({}, i, { expires: -1 })), !0) : !1 } });
+            //@ sourceMappingURL=jquery-cookie.min.js.map
+            $(function () { var n = $("#sidebar"); $.cookie("menu") == 1 ? n.removeClass("nav-collapsed") : n.addClass("nav-collapsed"), $(".nav-sidebar li ul").each(function () { var t = $(this), r = t.parent("li"), n = r.children("a").first(), i; n.append(' <b class="caret"><\/b>'), n.css({ position: "relative" }), i = n.children(".icon-angle-left"), t.hide(), n.click(function () { n.hasClass("menu-active") ? (i.removeClass("icon-angle-down").addClass("left"), n.removeClass("menu-active"), t.slideUp()) : (i.removeClass("icon-angle-left").addClass("down"), n.addClass("menu-active"), t.slideDown()) }) }), $(".nav-sidebar a").each(function () { var r = $(this), i, u, n, t; try { i = window.location.pathname, u = i.substring(i.lastIndexOf("/") + 1), u == r.attr("href") && (n = r.parent("li"), n.addClass("active"), n.append('<div class="menu-arrow-selected"><\/div>'), t = n.parent("ul"), t.css("display") == "none" && (t.show(), t.parent().children("a:first-child").addClass("menu-active"))) } catch (f) { } }); $("#btn-navbar").bind("click", function () { n.hasClass("nav-collapsed") ? (n.removeClass("nav-collapsed"), $.cookie("menu", 1)) : (n.addClass("nav-collapsed"), $.cookie("menu", 0)) }) });
+            //@ sourceMappingURL=jquery-menu.min.js.map
+
             $(document).ready(function () {
                 window.setTimeout(function () {
                     // informações de login
                     $("#usuario").text($(".userName").text());
-                    $("#logout").bind("click", function (e) {
-                        alert('a');
+                    $("#logout").bind("click", function (e) {                       
                         e.preventDefault();
                         $(".menuitem_options ._1.odd a").trigger('click');
                     });
@@ -152,10 +174,60 @@
                     // Estilo iframe
                     $(".body > iframe").addClass("panel panel-default");
 
+                  
+
                     // Lista tarefas pendentes home
+                    listaTarefasPendentes();
+
+                    $("#nav-menu a").bind('click', function (e) {
+                        e.preventDefault();
+                        var a = $(this);
+
+                        $("#nav-menu li").removeClass("active");
+                        
+                        var inbox = $("#caixaEntrada");
+                        var body = $("#body");
+
+                        if (a.hasClass("caixa-entrada")) {
+                            a.parent().removeClass("active");
+                            a.parent().addClass("active");
+                            inbox.show();
+                            //body.hide();
+                        }
+                        else if (a.hasClass("dados-cadastrais")) {
+                            if (taskDadosCadastrais != "") {
+                                window.location = taskDadosCadastrais;
+                                a.parent().removeClass("active");
+                                a.parent().addClass("active");
+                                body.show();
+                            }
+                            else
+                                alert('Tarefa não atribuída a seu usuário');
+                            inbox.hide();
+                            body.show();
+                        }
+                        else if (a.hasClass("cadastrar-pesquisa")) {
+                            if (taskCadastrarPesquisa != "") {
+                                window.location = taskCadastrarPesquisa;
+                                a.parent().removeClass("active");
+                                a.parent().addClass("active");
+                                body.show();
+                            }
+                            else
+                                alert('Tarefa não atribuída a seu usuário');
+                            inbox.hide();
+                            body.show();
+                        } else {
+                            body.show();
+                        }
+                        
+                    });
 
                 }, 1000);               
             });
+
+            var taskDadosCadastrais = "";
+            var taskCadastrarPesquisa = "";
 
             function listaTarefasPendentes() {
                 $.ajax({
@@ -165,8 +237,15 @@
                         var count = 0;
                         var liTarefas = '<ol class="list-group">';
                         $.each(data, function () {
-                            var val = $(this)[0];                           
-                            liTarefas += '<li class="list-group-item"><a href="http://localhost:8080/bonita/console/homepage#?id=' + val.id + '&_p=performTask&_pf=1">' + val.displayName + '</a></li>';
+                            var val = $(this)[0];
+                            var link = 'http://localhost:8080/bonita/console/homepage#?id=' + val.id + '&_p=performTask&_pf=1';
+                            liTarefas += '<li class="list-group-item"><a href="' + link + '" onclick="javascript:document.getElementById(\'caixaEntrada\').style.display = \'none\'">' + val.displayName + '</a></li>';
+                            // Verifica por nome, checar viabilidade de usar id
+                            if (val.displayName == "Cadastrar Pesquisa") 
+                                taskCadastrarPesquisa = link;
+                            else if (val.displayName == "Preencher_Dados_Cadastrais")
+                                taskDadosCadastrais = link;
+                            
                             count++;
                         });
                         liTarefas += "</ol>";
@@ -188,7 +267,7 @@
                     <!-- Brand and toggle get grouped for better mobile display -->
                     
 
-                    <ul class="nav nav-tabs" id="Ul4">
+                    <ul class="nav nav-tabs" id="navTopo" style="display:none">
                         <li class="active"><a href="#dash1" data-toggle="tab"><i class="icon-home"></i> Preencher dados cadastrais</a></li>
                         <li><a href="#dash2" data-toggle="tab">Currículo</a></li>                        
                     </ul>
@@ -210,21 +289,25 @@
 
             <nav id="sidebar">  
                 <img src="http://localhost/BonitaCustom/images/logo.jpg" alt="" />
-                <ul class="nav nav-sidebar">
-                    <li><a href="Default.aspx" accesskey="a"><i class="icon-search"></i><span>Caixa de entrada <span class="badge" style="padding-left:7px; margin-left:5px; color:#333" id="qtdTarefas">0</span></span></a></li>                   
-                    <li class="active"><a href="Default.aspx" accesskey="a"><i class="icon-search"></i><span>Pesquisador</span></a></li>                   
-                    <li class="active"><a href="Default.aspx" accesskey="a"><i class="icon-home"></i><span>Projetos</span></a></li>                   
+                <ul class="nav nav-sidebar" id="nav-menu">
+                    <li><a href="#" class="caixa-entrada"><i class="icon-inbox"></i><span>Caixa de entrada <span class="badge" style="padding-left:7px; margin-left:5px; color:#333" id="qtdTarefas">0</span></span></a></li>                   
+                    <li><a href="#"><i class="icon-search"></i><span>Pesquisador</span></a>
+                        <ul>
+                            <li><a href="#" class="dados-cadastrais"><i class="icon-check"></i><span>Preencher dados cadastrais</span></a>
+                        </ul>
+                    </li>                   
+                    <li><a href="#" accesskey="a"><i class="icon-beaker"></i><span>Projetos</span></a>
+                        <ul><li><a href="#" accesskey="a" class="cadastrar-pesquisa"><i class="icon-check"></i><span>Cadastrar projeto</span></a></ul>
+                    </li>                   
                    
                 </ul>            
             </nav>
 
-            <section id="content">              
-                <h1>Caixa de entrada</h1>
-                <section id="caixaEntrada">                    
-                    
+            <div id="content">              
+                <section id="caixaEntrada">                  
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Lista de tarefas pendentes</h3>
+                            <h3 class="panel-title">Tarefas pendentes</h3>
                         </div>
                         <div class="panel-body">
                         <ul id="tarefasPendentes">                            
@@ -233,10 +316,10 @@
                         </div>
                     </div>
                 </section>
-                <div id="body">
+                <div id="body" class="panel panel-default">
                     
                 </div>
-            </section>
+            </div>
 
             <div id="modalCss" class="modal hide fade" tabindex="-1" role="dialog" style="width: 900px; margin-left: -450px">
                 <div class="modal-header">
@@ -269,7 +352,7 @@
 			</div>
 
 			<div class="body">
-				<div id="body"></div>
+				<!--<div id="body"></div>-->
 			</div>
 
 			<div id="socialbar"></div>
