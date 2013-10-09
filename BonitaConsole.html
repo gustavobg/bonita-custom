@@ -151,7 +151,17 @@
             #body .footer {
                 display:none;
             }
-           
+			.section_filters_panel, .section_tables_panel, .section_details_panel {
+				display:none;
+			}
+			#body {
+				border:none;
+				display:none
+			}
+			#static_application {
+				border:solid 1px #fafafa;
+			}
+			
             
         </style>         
         <!--<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>       -->
@@ -191,6 +201,7 @@
                         if (a.hasClass("caixa-entrada")) {
                             a.parent().removeClass("active");
                             a.parent().addClass("active");
+							body.hide();
                             inbox.show();
                             //body.hide();
                         }
@@ -239,7 +250,7 @@
                         $.each(data, function () {
                             var val = $(this)[0];
                             var link = 'http://localhost:8080/bonita/console/homepage#?id=' + val.id + '&_p=performTask&_pf=1';
-                            liTarefas += '<li class="list-group-item"><a href="' + link + '" onclick="javascript:document.getElementById(\'caixaEntrada\').style.display = \'none\'">' + val.displayName + '</a></li>';
+                            liTarefas += '<li class="list-group-item"><a href="' + link + '" onclick="inboxClick();">' + val.displayName + '</a></li>';
                             // Verifica por nome, checar viabilidade de usar id
                             if (val.displayName == "Cadastrar Pesquisa") 
                                 taskCadastrarPesquisa = link;
@@ -253,9 +264,11 @@
                         $("#tarefasPendentes").append(liTarefas);
                     }
                 });
-
-                
             }
+			function inboxClick() {
+				document.getElementById('caixaEntrada').style.display = 'none';
+				document.getElementById('body').style.display = 'block';
+			}
         </script>
 
 		<script type="text/javascript" src="console.nocache.js"></script>
