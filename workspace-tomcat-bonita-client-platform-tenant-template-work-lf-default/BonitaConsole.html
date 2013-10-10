@@ -1,0 +1,383 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="version" content="6.0.3" />
+
+		<title>Bonita Portal</title>
+		<link rel="icon" type="image/png" href="images/favicon2.ico?v=6.0.3" />
+
+		<!-- Load LESS CSS -->
+		<link rel="stylesheet/less" type="text/css" href="css/styles.less?v=6.0.3">
+		<script type="text/javascript" src="scripts/includes/less.config.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/less-1.3.3.min.js?v=6.0.3"></script>
+
+		<!-- Seems to be used by one of the js script -->
+		<link rel="stylesheet" type="text/css" href="scripts/ext/github.css?v=6.0.3">
+		<!--[if lte IE 8]>
+			<script language="javascript" type="text/javascript" src="scripts/ext/excanvas.min.js?v=6.0.3"></script>
+		<![endif]-->
+		
+
+		<!-- Load JQuery -->
+		<script type="text/javascript" src="scripts/jquery/jquery-1.6.4.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery-ui-1.10.3.custom.min.js?v=6.0.3"></script>
+		<!-- Load JQuery plugins -->
+		<script type="text/javascript" src="scripts/jquery/plugins/color-animation.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/plugins/jquery.form.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/plugins/jquery.pseudo.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/plugins/customInput.jquery.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/plugins/jquery.flot.min.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/plugins/jquery.flot.pie.min.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/plugins/jquery.placeholder.min.js?v=6.0.3"></script>
+		<!-- Load external tools -->
+		<script type="text/javascript" src="scripts/ext/plupload.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/plupload.gears.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/plupload.silverlight.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/plupload.flash.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/plupload.browserplus.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/plupload.html4.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/plupload.html5.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/date.format.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/datepicker/js/datepicker.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/highlight.pack.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/ext/noty.pack.js?v=6.0.3"></script>
+		<!-- Load jQuery+ -->
+		<script type="text/javascript" src="scripts/jquery/jquery+/extend.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/debug.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/vartypes.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/compatibility.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/dom.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/options.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/css.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/uiManager.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/togglePanel.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/enable.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/selectors.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/color.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/events.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/manipulation.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/checkbox.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/tabs.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/jquery+/loading.js?v=6.0.3"></script>
+		<!--Load Portal JS-->
+		<script type="text/javascript" src="scripts/includes/array.prototype.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/common.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/popup.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/dashboard.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/form.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/skin.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/table.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/menu.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/switchPanel.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/wizard.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/socialbar.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/gwt.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/datepicker.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/includes/autouploader.js?v=6.0.3"></script>
+
+		<!-- Reporting -->
+		<script type="text/javascript" src="scripts/includes/report.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/daterangepicker.jQuery.js?v=6.0.3"></script>
+		<script type="text/javascript" src="scripts/jquery/date.js?v=6.0.3"></script>
+		
+		<!-- Customization -->
+		<link type="text/css" rel="stylesheet" href="http://gustavogebrim.com.br/css/ui-all.min.css" />
+        <style>
+            #menu, #login
+            {
+                display:none;
+            }
+            .navbar .nav-tabs li a
+            {
+                padding:15px 11px;
+            }
+            header .navbar
+            {
+                margin-left:250px;
+            }
+            #sidebar
+            {
+                border-right:solid 1px #e5e5e5;
+            }
+            #sidebar .nav-sidebar
+            {
+                border-top:solid 1px #e5e5e5;
+                border-right:none;
+            }
+              
+            #sidebar
+            {
+                margin-top:-61px;
+            }
+                #sidebar > img
+                {
+                    margin-left:33px;
+                    margin-top:10px;
+                    margin-bottom:10px;
+                }
+            .nav-divider-vertical
+            {
+                height:61px;
+            }
+            .body > iframe
+            {
+                height:700px;
+                width:97%;
+            }
+            .header h1
+            {
+                font-size:1.2em;
+                margin-left:15px;
+            }
+            .footerpusher
+            {
+                display:none;
+            }
+            section > h3:first-child {
+                margin-left:15px;
+            }
+            .navbar-nav>li>a {
+               padding-top: 18.5px;
+            }
+            .nav-sidebar .active *, .nav-sidebar .active *:hover {
+                background-color:#0D6070;
+                color:#fff !important;
+
+            }
+            .body > p {
+                margin-left:15px;
+            }
+            #body .footer {
+                display:none;
+            }
+			.section_filters_panel, .section_tables_panel, .section_details_panel {
+				display:none;
+			}
+			#body {
+				border:none;
+				display:none
+			}
+			#static_application {
+				border:solid 1px #fafafa;
+			}
+			
+            
+        </style>         
+        <!--<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>       -->
+
+        <script type="text/javascript">
+            (function (n) { typeof define == "function" && define.amd ? define(["jquery"], n) : n(jQuery) })(function (n) { function u(n) { return n } function f(n) { return decodeURIComponent(n.replace(r, " ")) } function i(n) { n.indexOf('"') === 0 && (n = n.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, "\\")); try { return t.json ? JSON.parse(n) : n } catch (i) { } } var r = /\+/g, t = n.cookie = function (r, e, o) { var l, h, s, y; if (e !== undefined) return o = n.extend({}, t.defaults, o), typeof o.expires == "number" && (l = o.expires, h = o.expires = new Date, h.setDate(h.getDate() + l)), e = t.json ? JSON.stringify(e) : String(e), document.cookie = [t.raw ? r : encodeURIComponent(r), "=", t.raw ? e : encodeURIComponent(e), o.expires ? "; expires=" + o.expires.toUTCString() : "", o.path ? "; path=" + o.path : "", o.domain ? "; domain=" + o.domain : "", o.secure ? "; secure" : ""].join(""); var a = t.raw ? u : f, v = document.cookie.split("; "), c = r ? undefined : {}; for (s = 0, y = v.length; s < y; s++) { var p = v[s].split("="), w = a(p.shift()), b = a(p.join("=")); if (r && r === w) { c = i(b); break } r || (c[w] = i(b)) } return c }; t.defaults = {}, n.removeCookie = function (t, i) { return n.cookie(t) !== undefined ? (n.cookie(t, "", n.extend({}, i, { expires: -1 })), !0) : !1 } });
+            //@ sourceMappingURL=jquery-cookie.min.js.map
+            $(function () { var n = $("#sidebar"); $.cookie("menu") == 1 ? n.removeClass("nav-collapsed") : n.addClass("nav-collapsed"), $(".nav-sidebar li ul").each(function () { var t = $(this), r = t.parent("li"), n = r.children("a").first(), i; n.append(' <b class="caret"><\/b>'), n.css({ position: "relative" }), i = n.children(".icon-angle-left"), t.hide(), n.click(function () { n.hasClass("menu-active") ? (i.removeClass("icon-angle-down").addClass("left"), n.removeClass("menu-active"), t.slideUp()) : (i.removeClass("icon-angle-left").addClass("down"), n.addClass("menu-active"), t.slideDown()) }) }), $(".nav-sidebar a").each(function () { var r = $(this), i, u, n, t; try { i = window.location.pathname, u = i.substring(i.lastIndexOf("/") + 1), u == r.attr("href") && (n = r.parent("li"), n.addClass("active"), n.append('<div class="menu-arrow-selected"><\/div>'), t = n.parent("ul"), t.css("display") == "none" && (t.show(), t.parent().children("a:first-child").addClass("menu-active"))) } catch (f) { } }); $("#btn-navbar").bind("click", function () { n.hasClass("nav-collapsed") ? (n.removeClass("nav-collapsed"), $.cookie("menu", 1)) : (n.addClass("nav-collapsed"), $.cookie("menu", 0)) }) });
+            //@ sourceMappingURL=jquery-menu.min.js.map
+
+            $(document).ready(function () {
+                window.setTimeout(function () {
+                    // informações de login
+                    $("#usuario").text($(".userName").text());
+                    $("#logout").bind("click", function (e) {                       
+                        e.preventDefault();
+                        $(".menuitem_options ._1.odd a").trigger('click');
+                    });
+
+                    // Estilo iframe
+                    $(".body > iframe").addClass("panel panel-default");
+
+                  
+
+                    // Lista tarefas pendentes home
+                    listaTarefasPendentes();
+
+                    $("#nav-menu a").bind('click', function (e) {
+                        e.preventDefault();
+                        var a = $(this);
+
+                        $("#nav-menu li").removeClass("active");
+                        
+                        var inbox = $("#caixaEntrada");
+                        var body = $("#body");
+
+                        if (a.hasClass("caixa-entrada")) {
+                            a.parent().removeClass("active");
+                            a.parent().addClass("active");
+							body.hide();
+							inbox.show();
+							listaTarefasPendentes();
+                            //body.hide();
+                        }
+                        else if (a.hasClass("dados-cadastrais")) {
+                            if (taskDadosCadastrais != "") {
+                                window.location = taskDadosCadastrais;
+                                a.parent().removeClass("active");
+                                a.parent().addClass("active");
+                                body.show();
+                            }
+                            else
+                                alert('Tarefa não atribuída a seu usuário');
+                            inbox.hide();
+                            body.show();
+                        }
+                        else if (a.hasClass("cadastrar-pesquisa")) {
+                            if (taskCadastrarPesquisa != "") {
+                                window.location = taskCadastrarPesquisa;
+                                a.parent().removeClass("active");
+                                a.parent().addClass("active");
+                                body.show();
+                            }
+                            else
+                                alert('Tarefa não atribuída a seu usuário');
+                            inbox.hide();
+                            body.show();
+                        } else {
+                            body.show();
+                        }
+                        
+                    });
+
+                }, 1000);               
+            });
+
+            var taskDadosCadastrais = "";
+            var taskCadastrarPesquisa = "";
+
+            function listaTarefasPendentes() {
+                $("#tarefasPendentes").html("");
+                $.ajax({
+                    url: "http://localhost:8080/bonita/API/bpm/humanTask?p=0&c=10&o=priority%20DESC&f=state%3dready&f=user_id%3d",                  
+                    type: "GET",
+                    success: function (data) {
+                        var count = 0;
+                        var liTarefas = '<ol class="list-group">';
+                        $.each(data, function () {
+                            var val = $(this)[0];
+                            var link = 'http://localhost:8080/bonita/console/homepage#?id=' + val.id + '&_p=performTask&_pf=1';
+                            liTarefas += '<li class="list-group-item"><a href="' + link + '" onclick="inboxClick();">' + val.displayName + '</a></li>';
+                            // Verifica por nome, checar viabilidade de usar id
+                            if (val.displayName == "Cadastrar Pesquisa") 
+                                taskCadastrarPesquisa = link;
+                            else if (val.displayName == "Preencher_Dados_Cadastrais")
+                                taskDadosCadastrais = link;
+                            
+                            count++;
+                        });
+                        liTarefas += "</ol>";
+                        $("#qtdTarefas").text(count);
+                        $("#tarefasPendentes").append(liTarefas);
+                        if (count == 0)
+                            $("#tarefasPendentes").html("<p>Nenhuma tarefa pendente para o usuário</p>");
+                    }
+                });
+            }
+			function inboxClick() {
+				document.getElementById('caixaEntrada').style.display = 'none';
+				document.getElementById('body').style.display = 'block';
+			}
+        </script>
+
+		<script type="text/javascript" src="console.nocache.js"></script>
+	</head>
+	<body>
+        <div id="wrapper">
+            <header class="navbar" role="banner">
+                <nav class="navbar navbar-default" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    
+
+                    <ul class="nav nav-tabs" id="navTopo" style="display:none">
+                        <li class="active"><a href="#dash1" data-toggle="tab"><i class="icon-home"></i> Preencher dados cadastrais</a></li>
+                        <li><a href="#dash2" data-toggle="tab">Currículo</a></li>                        
+                    </ul>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->   
+                    <div class="collapse navbar-collapse pull-right">
+                        <ul class="nav navbar-nav navbar-right">                                                        
+                            <li class="nav-divider-vertical"></li>                       
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-wrap-circle"><b class="icon-user"></b></span> <span id="usuario">User</span></a>                                
+                            </li>
+                            <li class="nav-divider-vertical"></li>                       
+                            <li><a href="#" id="logout">Fazer logout</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+            </header>
+
+            <nav id="sidebar">  
+                <img src="http://localhost/BonitaCustom/images/logo.jpg" alt="" />
+                <ul class="nav nav-sidebar" id="nav-menu">
+                    <li><a href="#" class="caixa-entrada"><i class="icon-inbox"></i><span>Caixa de entrada <span class="badge" style="padding-left:7px; margin-left:5px; color:#333" id="qtdTarefas">0</span></span></a></li>                   
+                    <li><a href="#"><i class="icon-search"></i><span>Pesquisador</span></a>
+                        <ul>
+                            <li><a href="#" class="dados-cadastrais"><i class="icon-check"></i><span>Preencher dados cadastrais</span></a>
+                        </ul>
+                    </li>                   
+                    <li><a href="#" accesskey="a"><i class="icon-beaker"></i><span>Projetos</span></a>
+                        <ul><li><a href="#" accesskey="a" class="cadastrar-pesquisa"><i class="icon-check"></i><span>Cadastrar projeto</span></a></ul>
+                    </li>                   
+                   
+                </ul>            
+            </nav>
+
+            <div id="content">              
+                <section id="caixaEntrada">                  
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Tarefas pendentes</h3>
+                        </div>
+                        <div class="panel-body">
+                        <ul id="tarefasPendentes">                            
+
+                        </ul>
+                        </div>
+                    </div>
+                </section>
+                <div id="body" class="panel panel-default">
+                    
+                </div>
+            </div>
+
+            <div id="modalCss" class="modal hide fade" tabindex="-1" role="dialog" style="width: 900px; margin-left: -450px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">CSS customizado</h3>
+                </div>
+                <div class="modal-body">
+                    <p>O CSS gerado deve ser substituído no projeto pelo CSS padrão: (default.css)</p>  
+                
+                    <textarea id="css" style="width:850px; height:350px"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- custom markup end -->
+		<div class="footerpusher">
+
+			<div id="initloader">
+				<div class="loader">
+					<img src="images/loader.gif" />
+				</div>
+			</div>
+
+			<div class="header" id="header">
+				<div id="login"></div>
+				<div id="menu"></div>
+			</div>
+
+			<div class="body">
+				<!--<div id="body"></div>-->
+			</div>
+
+			<div id="socialbar"></div>
+			<div class="footerpush"></div>
+		</div>
+
+		<!-- OPTIONAL: include this if you want history support -->
+		<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+			style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+	</body>
+</html>

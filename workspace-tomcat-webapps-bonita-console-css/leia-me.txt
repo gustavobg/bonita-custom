@@ -1,0 +1,2 @@
+Copiar esse arquivo no diretório
+C:\BonitaBPMCommunity-6.0.0\workspace\tomcat\webapps\bonita\console\css

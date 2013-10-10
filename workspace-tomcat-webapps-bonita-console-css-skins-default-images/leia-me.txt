@@ -1,0 +1,2 @@
+Copiar imagens para o diretório
+C:\BonitaBPMCommunity-6.0.0\workspace\tomcat\webapps\bonita\console\css\skins\default\images
