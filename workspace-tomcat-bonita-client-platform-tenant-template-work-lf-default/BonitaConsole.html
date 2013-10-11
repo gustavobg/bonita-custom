@@ -144,8 +144,11 @@
             .nav-sidebar .active *, .nav-sidebar .active *:hover {
                 background-color:#0D6070;
                 color:#fff !important;
-
             }
+            .nav-sidebar li li i {
+                visibility:hidden;
+            }
+            
             .body > p {
                 margin-left:15px;
             }
@@ -176,6 +179,9 @@
             $(document).ready(function () {
                 window.setTimeout(function () {
                     // informações de login
+
+                    $("#userClick").bind("click", function (e) { e.preventDefault(); });
+
                     $("#usuario").text($(".userName").text());
                     $("#logout").bind("click", function (e) {                       
                         e.preventDefault();
@@ -295,7 +301,7 @@
                         <ul class="nav navbar-nav navbar-right">                                                        
                             <li class="nav-divider-vertical"></li>                       
                             <li>
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-wrap-circle"><b class="icon-user"></b></span> <span id="usuario">User</span></a>                                
+                                <a href="#" id="userClick" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-wrap-circle"><b class="icon-user"></b></span> <span id="usuario">User</span></a>                                
                             </li>
                             <li class="nav-divider-vertical"></li>                       
                             <li><a href="#" id="logout">Fazer logout</a></li>
