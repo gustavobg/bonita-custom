@@ -225,6 +225,18 @@
                             inbox.hide();
                             body.show();
                         }
+                        else if (a.hasClass("gerir-eventos")) {
+                            if (taskSolicitarEvento != "") {                                
+                                window.location = taskSolicitarEvento;
+                                a.parent().removeClass("active");
+                                a.parent().addClass("active");
+                                body.show();
+                            }
+                            else
+                                alert('Tarefa não atribuída a seu usuário');
+                            inbox.hide();
+                            body.show();
+                        }
                         else if (a.hasClass("cadastrar-pesquisa")) {
                             if (taskCadastrarPesquisa != "") {
                                 window.location = taskCadastrarPesquisa;
@@ -247,34 +259,50 @@
 
             var taskDadosCadastrais = "";
             var taskCadastrarPesquisa = "";
+            var taskSolicitarEvento = "";
+          
 
             function listaTarefasPendentes() {
                 $("#tarefasPendentes").html("");
+
                 $.ajax({
-                    url: "http://localhost:8080/bonita/API/bpm/humanTask?p=0&c=10&o=priority%20DESC&f=state%3dready&f=user_id%3d",                  
+                    url: "http://localhost:8080/bonita/API/system/session/unusedId",
                     type: "GET",
                     success: function (data) {
-                        var count = 0;
-                        var liTarefas = '<ol class="list-group">';
-                        $.each(data, function () {
-                            var val = $(this)[0];
-                            var link = 'http://localhost:8080/bonita/console/homepage#?id=' + val.id + '&_p=performTask&_pf=1';
-                            liTarefas += '<li class="list-group-item"><a href="' + link + '" onclick="inboxClick();">' + val.displayName + '</a></li>';
-                            // Verifica por nome, checar viabilidade de usar id
-                            if (val.displayName == "Cadastrar Pesquisa") 
-                                taskCadastrarPesquisa = link;
-                            else if (val.displayName == "Preencher_Dados_Cadastrais")
-                                taskDadosCadastrais = link;
-                            
-                            count++;
+                        var userId = data.user_id;
+
+                        $.ajax({
+                            url: "http://localhost:8080/bonita/API/bpm/humanTask?p=0&c=10&o=priority%20DESC&f=state%3dready&f=user_id=" + userId,
+                            type: "GET",
+                            success: function (data) {
+                                var count = 0;
+                                var liTarefas = '<ol class="list-group">';
+                                $.each(data, function () {
+                                    var val = $(this)[0];
+                                    var link = 'http://localhost:8080/bonita/console/homepage#?id=' + val.id + '&_p=performTask&_pf=1';
+                                    liTarefas += '<li class="list-group-item"><a href="' + link + '" onclick="inboxClick();">' + val.displayName + '</a></li>';
+                                    // Verifica por nome, checar viabilidade de usar id
+                                    if (val.displayName == "Cadastrar Pesquisa")
+                                        taskCadastrarPesquisa = link;
+                                    else if (val.displayName == "Preencher_Dados_Cadastrais")
+                                        taskDadosCadastrais = link;
+                                    else if (val.displayName == "Solicitar Evento")
+                                        taskSolicitarEvento = link;
+
+                                    count++;
+                                });
+                                liTarefas += "</ol>";
+                                $("#qtdTarefas").text(count);
+                                $("#tarefasPendentes").append(liTarefas);
+                                if (count == 0)
+                                    $("#tarefasPendentes").html("<p>Nenhuma tarefa pendente para o usuário</p>");
+                            }
                         });
-                        liTarefas += "</ol>";
-                        $("#qtdTarefas").text(count);
-                        $("#tarefasPendentes").append(liTarefas);
-                        if (count == 0)
-                            $("#tarefasPendentes").html("<p>Nenhuma tarefa pendente para o usuário</p>");
+
                     }
                 });
+
+                
             }
 			function inboxClick() {
 				document.getElementById('caixaEntrada').style.display = 'none';
@@ -321,9 +349,15 @@
                         </ul>
                     </li>                   
                     <li><a href="#" accesskey="a"><i class="icon-beaker"></i><span>Projetos</span></a>
-                        <ul><li><a href="#" accesskey="a" class="cadastrar-pesquisa"><i class="icon-check"></i><span>Cadastrar projeto</span></a></ul>
-                    </li>                   
-                   
+                        <ul>
+                            <li>
+                                <a href="#" accesskey="a" class="cadastrar-pesquisa"><i class="icon-check"></i><span>Cadastrar projeto</span></a>
+                            </li>  
+                            <li>
+                                <a href="#" accesskey="a" class="gerir-eventos"><i class="icon-check"></i><span>Gerir eventos</span></a>
+                            </li> 
+                        </ul>                 
+                    </li> 
                 </ul>            
             </nav>
 
