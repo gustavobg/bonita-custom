@@ -20,6 +20,25 @@
 	<script type="text/javascript" language="javascript" src="console.nocache.js"></script>
 	
 	<style>
+        @font-face {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 300;
+          src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+        }
+        @font-face {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+        }
+        @font-face {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 600;
+          src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+        }
+
 	    #static_application div#bonita-open-solution-logo {
 	        background: url(themeResource?theme=default&location=images/logo.png) !important;
 	        -moz-background-size: 83px !important;
@@ -30,7 +49,23 @@
 	        height: 95px;
             margin-left:20px;
 	    }
-        .bonita_logout_label, .bonita_logout_label:visited, .bonita_logout_label:hover {
+	    div.bonita_form_container, body {
+            font-family:"Open Sans" !important;
+            font-size:.9em;
+	    }     
+        .bonita_form_radio .custom-checkbox label.checked {
+            background-image:url(http://gustavogebrim.com.br/Bonita/form-checkbox-checked.png) !important;
+        }   
+        .bonita_user_xp_icon {
+            background-image:url(http://gustavogebrim.com.br/Bonita/sprite.png) !important;
+        }
+        .bonita_logout_label, .bonita_logout_label:visited, .bonita_logout_label:hover,
+        div.bonita_form_container div#bonita_form_confirm_todolist .bonita_form_task_link,
+        div#bonita-banneraltbas,
+        .bonita_logout_label, .bonita_logout_label:visited, .bonita_logout_label:hover,
+        .gwt-SuggestBoxPopup .item.item-selected,
+        .dateBoxPopup .datePickerDayIsHighlighted:hover
+        {
             color:#5DC6C0 !important
 	    } 
 	    div#bonita-banneraltbas {
@@ -39,10 +74,10 @@
         .bonita_process_label {
             height:95px !important;
         }
-        
+      
 		.gwt-HTML {
-				display:none;
-			}
+			display:none;
+		}
 	</style>
 </head>
 
