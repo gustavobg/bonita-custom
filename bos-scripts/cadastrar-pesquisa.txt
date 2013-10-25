@@ -1,0 +1,60 @@
+<script type="text/javascript">
+		var arrEls = [];
+		var arrPop = [];
+		
+		$(document).ready(function(){
+			// pega elementos				
+			$("#Caixa_de_sugestao1, #Caixa_de_sugestao2, #Caixa_de_sugestao3, #Caixa_de_sugestao4").each(function(){
+				// esconde todos
+				var td = $(this).parent("td").css('visibility','hidden');
+				arrEls.unshift([$(this), td]);
+			});
+			
+			$("#AdicionarPesquisador").bind('click', function(){
+				if (arrEls.length > 0) {
+					var el = arrEls.pop();
+					el[1].css('visibility','visible');
+					arrPop.push(el);
+				}
+			});
+			
+			$("#RemoverPesquisador").bind('click', function(){
+				if (arrPop.length > 0) {
+					var el = arrPop.pop();
+					el[1].css('visibility','visible');
+				}
+			});
+			
+			// Campos de texto
+			window.setTimeout(function(){				
+				$("textarea[data-max-char]").each(function(){	
+					
+					var elemento = $(this);
+
+			        elemento.wrap('<div class="ui-limite-wrap"></div>').parent('.ui-limite-wrap').append('<div class="ui-limite-info"></div>');
+					
+					var maxChar = elemento.data("maxChar");		
+
+			        elemento.keyup(function() {
+			            var text = elemento.val();
+			            var textlength = text.length;            
+			            var wrap = elemento.parent('.ui-limite-wrap');   
+							
+
+			            if (textlength > maxChar) {
+			                $(wrap).children('.ui-limite-info').html('').html('Você não pode digitar mais que ' + maxChar + ' caracteres');
+			                elemento.val(text.substr(0, maxChar));
+			                return false;
+			            }
+			            else {                
+			                var caracterDisponivel = maxChar - textlength;
+			                var caracter = ((caracterDisponivel > 1) ? 'caracteres' : 'caractere');
+			                $(wrap).children('.ui-limite-info').html('').html('Você pode digitar mais ' + caracterDisponivel + ' ' + caracter);
+			                return true;
+			            }
+			        })					
+				});
+				
+			}, 1000);			
+		});	
+	</script>
