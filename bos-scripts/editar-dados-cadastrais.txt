@@ -4,10 +4,19 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="description" content="Bonita Forms Application"/>
 		<link href="css/bonita_form_default.css" rel="stylesheet" type="text/css"/>
-			<link href="css/generatedcss.css" rel="stylesheet" type="text/css"/>			
+			<link href="css/generatedcss.css" rel="stylesheet" type="text/css"/>
 </head>
 	<body>
-		
+		 <style>
+		.row_idioma .bonita_form_label_left, .row_formacao .bonita_form_label_left {
+			float:none;
+			width:auto;
+			text-align:left;
+		} 
+		.row_idioma .list_container.resized {
+			width: 82% !important;
+		}
+		</style>
 		<div id="bonita_form_page_label" class="bonita_form_page_label"></div>
 		<div id="bonita_form_step_header">
 			<div id="bonita-object-area-top"></div>
@@ -24,13 +33,6 @@
        <div>
        </div>
     </div>
-    <style>
-		.row_idioma .bonita_form_label_left, .row_formacao .bonita_form_label_left {
-			float:none;
-			width:auto;
-			text-align:left;
-		} 
-	</style>
     <table class="bonita_table_container" width="100%">
       <colgroup>
         <col class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Column0"/>
@@ -42,9 +44,6 @@
         <col class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Column6"/>
         <col class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Column7"/>
       </colgroup>
-      
-      
-      
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row0">
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_nome_do_pesquisador" colspan="3" rowspan="1">
           <div id="nome_do_pesquisador">
@@ -766,17 +765,13 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row40">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Idiomas" colspan="6" rowspan="1">
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Idiomas" colspan="8" rowspan="1">
           <div id="Idiomas">
            </div>
          </td>
-        <td>
-         </td>
-        <td>
-         </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row41">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Botao_simples1 _R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_td_Botao_simples1" colspan="1" rowspan="1">
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_AdicionarIdioma _R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_td_AdicionarIdioma" colspan="1" rowspan="1">
           <div id="AdicionarIdioma">
            </div>
          </td>
@@ -796,16 +791,16 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row42 row_idioma">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto1" colspan="1" rowspan="1">
-          <div id="Campo_de_texto1">
-           </div>
-          <div id="Campo_de_texto1_default_validator">
-           </div>
-         </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao1" colspan="1" rowspan="1">
           <div id="Selecao1">
            </div>
           <div id="Selecao1_default_validator">
+           </div>
+         </td>
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto1" colspan="1" rowspan="1">
+          <div id="Campo_de_texto1">
+           </div>
+          <div id="Campo_de_texto1_default_validator">
            </div>
          </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao2" colspan="1" rowspan="1">
@@ -838,16 +833,16 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row43 row_idioma">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto2" colspan="1" rowspan="1">
-          <div id="Campo_de_texto2">
-           </div>
-          <div id="Campo_de_texto2_default_validator">
-           </div>
-         </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao6" colspan="1" rowspan="1">
           <div id="Selecao6">
            </div>
           <div id="Selecao6_default_validator">
+           </div>
+         </td>
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto2" colspan="1" rowspan="1">
+          <div id="Campo_de_texto2">
+           </div>
+          <div id="Campo_de_texto2_default_validator">
            </div>
          </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao7" colspan="1" rowspan="1">
@@ -880,16 +875,16 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row44 row_idioma">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto3" colspan="1" rowspan="1">
-          <div id="Campo_de_texto3">
-           </div>
-          <div id="Campo_de_texto3_default_validator">
-           </div>
-         </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao11" colspan="1" rowspan="1">
           <div id="Selecao11">
            </div>
           <div id="Selecao11_default_validator">
+           </div>
+         </td>
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto3" colspan="1" rowspan="1">
+          <div id="Campo_de_texto3">
+           </div>
+          <div id="Campo_de_texto3_default_validator">
            </div>
          </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao12" colspan="1" rowspan="1">
@@ -922,16 +917,16 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row45 row_idioma">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto4" colspan="1" rowspan="1">
-          <div id="Campo_de_texto4">
-           </div>
-          <div id="Campo_de_texto4_default_validator">
-           </div>
-         </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao16" colspan="1" rowspan="1">
           <div id="Selecao16">
            </div>
           <div id="Selecao16_default_validator">
+           </div>
+         </td>
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto4" colspan="1" rowspan="1">
+          <div id="Campo_de_texto4">
+           </div>
+          <div id="Campo_de_texto4_default_validator">
            </div>
          </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao17" colspan="1" rowspan="1">
@@ -964,16 +959,16 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row46 row_idioma">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto5" colspan="1" rowspan="1">
-          <div id="Campo_de_texto5">
-           </div>
-          <div id="Campo_de_texto5_default_validator">
-           </div>
-         </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao21" colspan="1" rowspan="1">
           <div id="Selecao21">
            </div>
           <div id="Selecao21_default_validator">
+           </div>
+         </td>
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto5" colspan="1" rowspan="1">
+          <div id="Campo_de_texto5">
+           </div>
+          <div id="Campo_de_texto5_default_validator">
            </div>
          </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao22" colspan="1" rowspan="1">
@@ -1006,16 +1001,16 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row47 row_idioma">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto6" colspan="1" rowspan="1">
-          <div id="Campo_de_texto6">
-           </div>
-          <div id="Campo_de_texto6_default_validator">
-           </div>
-         </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao26" colspan="1" rowspan="1">
           <div id="Selecao26">
            </div>
           <div id="Selecao26_default_validator">
+           </div>
+         </td>
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto6" colspan="1" rowspan="1">
+          <div id="Campo_de_texto6">
+           </div>
+          <div id="Campo_de_texto6_default_validator">
            </div>
          </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao27" colspan="1" rowspan="1">
@@ -1048,16 +1043,16 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row48 row_idioma">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto7" colspan="1" rowspan="1">
-          <div id="Campo_de_texto7">
-           </div>
-          <div id="Campo_de_texto7_default_validator">
-           </div>
-         </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao31" colspan="1" rowspan="1">
           <div id="Selecao31">
            </div>
           <div id="Selecao31_default_validator">
+           </div>
+         </td>
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto7" colspan="1" rowspan="1">
+          <div id="Campo_de_texto7">
+           </div>
+          <div id="Campo_de_texto7_default_validator">
            </div>
          </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao32" colspan="1" rowspan="1">
@@ -1114,7 +1109,7 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row51">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Copia_de_Botao_simples1 _R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_td_Copia_de_Botao_simples1" colspan="1" rowspan="1">
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_AdicionarFormacao _R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_td_AdicionarFormacao" colspan="1" rowspan="1">
           <div id="AdicionarFormacao">
            </div>
          </td>
@@ -1666,13 +1661,13 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row66 row_formacao">
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao43" colspan="1" rowspan="2">
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Selecao43" colspan="1" rowspan="1">
           <div id="Selecao43">
            </div>
           <div id="Selecao43_default_validator">
            </div>
          </td>
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto36" colspan="1" rowspan="2">
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto36" colspan="1" rowspan="1">
           <div id="Campo_de_texto36">
            </div>
           <div id="Campo_de_texto36_default_validator">
@@ -1684,25 +1679,25 @@
           <div id="Caixa_de_sugestao8_default_validator">
            </div>
          </td>
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto38" colspan="1" rowspan="2">
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto38" colspan="1" rowspan="1">
           <div id="Campo_de_texto38">
            </div>
           <div id="Campo_de_texto38_default_validator">
            </div>
          </td>
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Caixa_de_marcar8" colspan="1" rowspan="2">
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Caixa_de_marcar8" colspan="1" rowspan="1">
           <div id="Caixa_de_marcar8">
            </div>
           <div id="Caixa_de_marcar8_default_validator">
            </div>
          </td>
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto39" colspan="1" rowspan="2">
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto39" colspan="1" rowspan="1">
           <div id="Campo_de_texto39">
            </div>
           <div id="Campo_de_texto39_default_validator">
            </div>
          </td>
-        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Caixa_de_marcar13" colspan="1" rowspan="2">
+        <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Caixa_de_marcar13" colspan="1" rowspan="1">
           <div id="Caixa_de_marcar13">
            </div>
           <div id="Caixa_de_marcar13_default_validator">
@@ -1716,11 +1711,23 @@
          </td>
       </tr>
       <tr class="_R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Row67 row_formacao">
+        <td>
+         </td>
+        <td>
+         </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto37" colspan="1" rowspan="1">
           <div id="Campo_de_texto37">
            </div>
           <div id="Campo_de_texto37_default_validator">
            </div>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
          </td>
         <td class="widget__R2yhQxuXEeO0j7nZVUq1sw__fCDVwBukEeO0j7nZVUq1sw_Campo_de_texto49" colspan="1" rowspan="1">
           <div id="Campo_de_texto49">
@@ -1934,7 +1941,11 @@
     </div>
   
 
-		</div>
+		
+	<div id="Campo_de_texto57"></div>
+	<div id="Campo_de_texto57_default_validator"></div>
+</div>
+		
 		<script type="text/javascript">
 			function adicionarCamposTr(idBotaoAdicionar, classRow) {
 				//var classRow = $(classRow);
@@ -2021,20 +2032,82 @@
 					$(".row_formacao:nth-child(even) td:nth-child(3) .bonita_form_entry").hide();
 					
 					$(".row_formacao:nth-child(odd) td:nth-child(3)").each(function(){
+						
+						var coluna = $(this).parents(".row_formacao").next().find("td:nth-child(3) .bonita_form_entry");
+						
 						$("<a href='#'>[+]</div>").bind('click', function(e){
 							e.preventDefault();
-							$(this).parents(".row_formacao").next().find("td:nth-child(3) .bonita_form_entry").show();
+							coluna.show();
 						}).appendTo($(this).find(".bonita_form_entry"));
+						
+						// botão remover
+						$("<a href='#'>[-]</div>").bind('click', function(e){
+							e.preventDefault();
+							coluna.hide();
+							coluna.find("input").each(function(){ $(this).val(""); })
+							      .find("select").each(function(){ $(this).val([]); });
+						}).appendTo($(this).find(".bonita_form_entry"));
+						
 					})
+					// Adiciona orgão financiador							
+					$(".row_formacao:nth-child(even) td:nth-child(8) .bonita_form_entry").hide();
+					
+					$(".row_formacao:nth-child(odd) td:nth-child(8)").each(function(){
+						
+						var coluna = $(this).parents(".row_formacao").next().find("td:nth-child(8) .bonita_form_entry");
+						
+						$("<a href='#'>[+]</div>").bind('click', function(e){
+							e.preventDefault();
+							coluna.show();
+						}).appendTo($(this).find(".bonita_form_entry"));
+						
+						// botão remover
+						$("<a href='#'>[-]</div>").bind('click', function(e){
+							e.preventDefault();
+							coluna.hide();
+							coluna.find("input").each(function(){ $(this).val(""); })
+							      .find("select").each(function(){ $(this).val([]); });
+						}).appendTo($(this).find(".bonita_form_entry"));
+						
+					});
+					// Bolsa?									
+					$(".row_formacao:nth-child(even) td:nth-child(8) .bonita_form_entry").hide();
+					$(".row_formacao:nth-child(odd) td:nth-child(8) .bonita_form_entry").hide();
+					
+					$(".row_formacao:nth-child(odd) td:nth-child(7)").each(function(){
+						var next = $(this).parents(".row_formacao").next().find("td:nth-child(8) .bonita_form_entry");
+						var current = $(this).parents(".row_formacao").find("td:nth-child(8) .bonita_form_entry");
+						$(this).find("input").bind('change', function(){
+							if ($(this).is(":checked")) {								
+								current.show();
+							} else {
+								next.hide();
+								current.hide();
+								next.find("input").each(function(){ $(this).val(""); });
+								current.find("input").each(function(){ $(this).val(""); });
+							}							
+						});
+					});
+					
 					
 					// Adiciona idioma (+)					
-					$(".row_idioma td:nth-child(1) .bonita_form_entry").hide();
+					$(".row_idioma td:nth-child(2) .bonita_form_entry").hide();
 					
-					$(".row_idioma td:nth-child(2)").each(function(){
+					$(".row_idioma td:nth-child(1)").each(function(){
+						var coluna = $(this).parents(".row_idioma").find("td:nth-child(2) .bonita_form_entry");
+						
 						$("<a href='#'>[+]</div>").bind('click', function(e){
-							e.preventDefault();
-							$(this).parents(".row_idioma").find("td:nth-child(1) .bonita_form_entry").show();
+							e.preventDefault();					
+							coluna.show();
 						}).appendTo($(this).find(".bonita_form_entry"));
+						// botão remover
+						$("<a href='#'>[-]</div>").bind('click', function(e){
+							e.preventDefault();	
+							coluna.hide();
+							coluna.find("input").each(function(){ $(this).val(""); })
+						      	  .find("select").each(function(){ $(this).val([]); });
+						}).appendTo($(this).find(".bonita_form_entry"));
+						
 					})
 					
 					
@@ -2043,5 +2116,6 @@
 				});
 			});
 		</script>
+		
 	</body>
 </html>
