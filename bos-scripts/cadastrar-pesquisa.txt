@@ -7,8 +7,8 @@
 			<link href="css/generatedcss.css" rel="stylesheet" type="text/css"/>
 </head>
 	<body>
-		 <style>
-		.row_dep .bonita_form_label_left, .row_centro .bonita_form_label_left,  .row_pesq .bonita_form_label_left {
+		<style>
+		.row_dep .bonita_form_label_left, .row_centro .bonita_form_label_left,  .row_pesq .bonita_form_label_left, .row_colab .bonita_form_label_left {
 			float:none;
 			width:auto;
 			text-align:left;
@@ -417,9 +417,9 @@
           <div id="Botao_simples1">
            </div>
          </td>
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Botao_simples3 _MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_td_Botao_simples3" colspan="2" rowspan="1">
-          <div id="Botao_simples3">
-           </div>
+        <td>
+         </td>
+        <td>
          </td>
         <td>
          </td>
@@ -439,11 +439,9 @@
           <div id="colab_default_validator">
            </div>
          </td>
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_nome_colab_externo" colspan="2" rowspan="1">
-          <div id="nome_colab_externo">
-           </div>
-          <div id="nome_colab_externo_default_validator">
-           </div>
+        <td>
+         </td>
+        <td>
          </td>
         <td>
          </td>
@@ -463,11 +461,9 @@
           <div id="colab2_default_validator">
            </div>
          </td>
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Pais_origem_colab_externo" colspan="2" rowspan="1">
-          <div id="Pais_origem_colab_externo">
-           </div>
-          <div id="Pais_origem_colab_externo_default_validator">
-           </div>
+        <td>
+         </td>
+        <td>
          </td>
         <td>
          </td>
@@ -487,11 +483,9 @@
           <div id="colab3_default_validator">
            </div>
          </td>
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_cpf_colab_externo" colspan="2" rowspan="1">
-          <div id="cpf_colab_externo">
-           </div>
-          <div id="cpf_colab_externo_default_validator">
-           </div>
+        <td>
+         </td>
+        <td>
          </td>
         <td>
          </td>
@@ -511,11 +505,9 @@
           <div id="colab4_default_validator">
            </div>
          </td>
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Instituicao_cola_ext" colspan="2" rowspan="1">
-          <div id="Instituicao_cola_ext">
-           </div>
-          <div id="Instituicao_cola_ext_default_validator">
-           </div>
+        <td>
+         </td>
+        <td>
          </td>
         <td>
          </td>
@@ -535,11 +527,9 @@
           <div id="colab5_default_validator">
            </div>
          </td>
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_email_colab_ext" colspan="2" rowspan="1">
-          <div id="email_colab_ext">
-           </div>
-          <div id="email_colab_ext_default_validator">
-           </div>
+        <td>
+         </td>
+        <td>
          </td>
         <td>
          </td>
@@ -875,9 +865,9 @@
          </td>
       </tr>
       <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row48">
-        <td>
-         </td>
-        <td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Botao_simples3 _MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_td_Botao_simples3" colspan="2" rowspan="1">
+          <div id="Botao_simples3">
+           </div>
          </td>
         <td>
          </td>
@@ -893,18 +883,114 @@
          </td>
       </tr>
       <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row49">
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_nome_colab_externo" colspan="1" rowspan="1">
+          <div id="nome_colab_externo">
+           </div>
+          <div id="nome_colab_externo_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Pais_origem_colab_externo" colspan="1" rowspan="1">
+          <div id="Pais_origem_colab_externo">
+           </div>
+          <div id="Pais_origem_colab_externo_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_cpf_colab_externo" colspan="2" rowspan="1">
+          <div id="cpf_colab_externo">
+           </div>
+          <div id="cpf_colab_externo_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Instituicao_cola_ext" colspan="2" rowspan="1">
+          <div id="Instituicao_cola_ext">
+           </div>
+          <div id="Instituicao_cola_ext_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_email_colab_ext" colspan="2" rowspan="1">
+          <div id="email_colab_ext">
+           </div>
+          <div id="email_colab_ext_default_validator">
+           </div>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row50">
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Nome2" colspan="1" rowspan="1">
+          <div id="Nome2">
+           </div>
+          <div id="Nome2_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Pais_origem_colab_externo2" colspan="1" rowspan="1">
+          <div id="Pais_origem_colab_externo2">
+           </div>
+          <div id="Pais_origem_colab_externo2_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_cpf_colab_externo2" colspan="2" rowspan="1">
+          <div id="cpf_colab_externo2">
+           </div>
+          <div id="cpf_colab_externo2_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Instituicao_cola_ext2" colspan="2" rowspan="1">
+          <div id="Instituicao_cola_ext2">
+           </div>
+          <div id="Instituicao_cola_ext2_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_email_colab_ext2" colspan="2" rowspan="1">
+          <div id="email_colab_ext2">
+           </div>
+          <div id="email_colab_ext2_default_validator">
+           </div>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row51">
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Copia_de_nome_colab_externo" colspan="1" rowspan="1">
+          <div id="Copia_de_nome_colab_externo">
+           </div>
+          <div id="Copia_de_nome_colab_externo_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Pais_origem_colab_externo3" colspan="1" rowspan="1">
+          <div id="Pais_origem_colab_externo3">
+           </div>
+          <div id="Pais_origem_colab_externo3_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_cpf_colab_externo3" colspan="2" rowspan="1">
+          <div id="cpf_colab_externo3">
+           </div>
+          <div id="cpf_colab_externo3_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Instituicao_cola_ext3" colspan="2" rowspan="1">
+          <div id="Instituicao_cola_ext3">
+           </div>
+          <div id="Instituicao_cola_ext3_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_email_colab_ext3" colspan="2" rowspan="1">
+          <div id="email_colab_ext3">
+           </div>
+          <div id="email_colab_ext3_default_validator">
+           </div>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row52">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Local_pesquisa" colspan="8" rowspan="1">
           <div id="Local_pesquisa">
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row50">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row53">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Centros_title" colspan="8" rowspan="1">
           <div id="Centros_title">
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row51">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row54">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Centros_pesquisa_envolvidos" colspan="3" rowspan="1">
@@ -922,7 +1008,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row52">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row55">
         <td>
          </td>
         <td>
@@ -940,7 +1026,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row53">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row56">
         <td>
          </td>
         <td>
@@ -958,7 +1044,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row54">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row57">
         <td>
          </td>
         <td>
@@ -978,7 +1064,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row55">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row58">
         <td>
          </td>
         <td>
@@ -998,7 +1084,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row56">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row59">
         <td>
          </td>
         <td>
@@ -1018,7 +1104,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row57">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row60">
         <td>
          </td>
         <td>
@@ -1038,7 +1124,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row58">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row61">
         <td>
          </td>
         <td>
@@ -1058,7 +1144,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row59">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row62">
         <td>
          </td>
         <td>
@@ -1078,7 +1164,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row60">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row63">
         <td>
          </td>
         <td>
@@ -1098,7 +1184,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row61">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row64">
         <td>
          </td>
         <td>
@@ -1118,7 +1204,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row62">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row65">
         <td>
          </td>
         <td>
@@ -1138,7 +1224,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row63">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row66">
         <td>
          </td>
         <td>
@@ -1158,13 +1244,13 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row64">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row67">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Departamentos_title" colspan="8" rowspan="1">
           <div id="Departamentos_title">
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row65">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row68">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_AdicionarDepartamentoEnvolvido _MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_td_AdicionarDepartamentoEnvolvido" colspan="2" rowspan="1">
@@ -1182,7 +1268,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row66">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row69">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep10" colspan="2" rowspan="1">
@@ -1202,7 +1288,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row67">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row70">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep9" colspan="2" rowspan="1">
@@ -1222,7 +1308,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row68">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row71">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep8" colspan="2" rowspan="1">
@@ -1242,7 +1328,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row69">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row72">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep7" colspan="2" rowspan="1">
@@ -1262,7 +1348,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row70">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row73">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep6" colspan="2" rowspan="1">
@@ -1282,7 +1368,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row71">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row74">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep5" colspan="2" rowspan="1">
@@ -1302,7 +1388,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row72">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row75">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep4" colspan="2" rowspan="1">
@@ -1322,7 +1408,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row73">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row76">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep3" colspan="2" rowspan="1">
@@ -1342,7 +1428,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row74">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row77">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep2" colspan="2" rowspan="1">
@@ -1362,7 +1448,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row75">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row78">
         <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_dep" colspan="2" rowspan="1">
@@ -1382,13 +1468,13 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row76">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row79">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Caracterizacao_Estudo" colspan="8" rowspan="1">
           <div id="Caracterizacao_Estudo">
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row77">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row80">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Desenho_estudo" colspan="4" rowspan="1">
           <div id="Desenho_estudo">
            </div>
@@ -1402,7 +1488,7 @@
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row78">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row81">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Envolv" colspan="4" rowspan="1">
           <div id="Envolv">
            </div>
@@ -1416,7 +1502,7 @@
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row79">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row82">
         <td>
          </td>
         <td>
@@ -1432,7 +1518,7 @@
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row80">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row83">
         <td>
          </td>
         <td>
@@ -1448,7 +1534,7 @@
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row81">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row84">
         <td>
          </td>
         <td>
@@ -1466,7 +1552,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row82">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row85">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Finalidade_Academica" colspan="3" rowspan="1">
           <div id="Finalidade_Academica">
            </div>
@@ -1484,7 +1570,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row83">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row86">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_mec" colspan="3" rowspan="1">
           <div id="mec">
            </div>
@@ -1504,7 +1590,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row84">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row87">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Area_Iteresse" colspan="3" rowspan="1">
           <div id="Area_Iteresse">
            </div>
@@ -1522,7 +1608,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row85">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row88">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Outros_area_interesse" colspan="3" rowspan="1">
           <div id="Outros_area_interesse">
            </div>
@@ -1540,7 +1626,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row86">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row89">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Inovacao_Tecnologica" colspan="3" rowspan="1">
           <div id="Inovacao_Tecnologica">
            </div>
@@ -1558,54 +1644,12 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row87">
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-      </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row88">
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-      </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row89">
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Orcamento" colspan="8" rowspan="1">
-          <div id="Orcamento">
-           </div>
-         </td>
-      </tr>
       <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row90">
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Campo_de_texto1" colspan="3" rowspan="1">
+          <div id="Campo_de_texto1">
+           </div>
+          <div id="Campo_de_texto1_default_validator">
+           </div>
          </td>
         <td>
          </td>
@@ -1619,6 +1663,48 @@
          </td>
       </tr>
       <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row91">
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row92">
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Orcamento" colspan="8" rowspan="1">
+          <div id="Orcamento">
+           </div>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row93">
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row94">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Orcamento_estimado" colspan="3" rowspan="1">
           <div id="Orcamento_estimado">
            </div>
@@ -1636,14 +1722,14 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row92">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row95">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Fonte_Financiamento" colspan="3" rowspan="2">
           <div id="Fonte_Financiamento">
            </div>
           <div id="Fonte_Financiamento_default_validator">
            </div>
          </td>
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Fonte_financiamento_outra" colspan="3" rowspan="1">
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Fonte_financiamento_outra" colspan="2" rowspan="1">
           <div id="Fonte_financiamento_outra">
            </div>
           <div id="Fonte_financiamento_outra_default_validator">
@@ -1653,25 +1739,15 @@
          </td>
         <td>
          </td>
+        <td>
+         </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row93">
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Fonte_financiamento_industria" colspan="3" rowspan="1">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row96">
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Fonte_financiamento_industria" colspan="2" rowspan="1">
           <div id="Fonte_financiamento_industria">
            </div>
           <div id="Fonte_financiamento_industria_default_validator">
            </div>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-      </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row94">
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
          </td>
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Fonte_Financiamento_Industria_Outra" colspan="3" rowspan="1">
           <div id="Fonte_Financiamento_Industria_Outra">
@@ -1679,18 +1755,52 @@
           <div id="Fonte_Financiamento_Industria_Outra_default_validator">
            </div>
          </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row97">
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Ficheiro4" colspan="3" rowspan="1">
+          <div id="Ficheiro4">
+           </div>
+          <div id="Ficheiro4_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_AgenciaFomento" colspan="2" rowspan="1">
+          <div id="AgenciaFomento">
+           </div>
+          <div id="AgenciaFomento_default_validator">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Campo_de_texto2" colspan="3" rowspan="1">
+          <div id="Campo_de_texto2">
+           </div>
+          <div id="Campo_de_texto2_default_validator">
+           </div>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row98">
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
         <td>
          </td>
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row95">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row99">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Conflito_de_interesse" colspan="8" rowspan="1">
           <div id="Conflito_de_interesse">
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row96">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row100">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Conflito_interesse" colspan="3" rowspan="1">
           <div id="Conflito_interesse">
            </div>
@@ -1708,7 +1818,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row97">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row101">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Qual_conflito_interesse" colspan="3" rowspan="1">
           <div id="Qual_conflito_interesse">
            </div>
@@ -1726,13 +1836,13 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row98">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row102">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Cronograma" colspan="8" rowspan="1">
           <div id="Cronograma">
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row99">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row103">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Duracao" colspan="3" rowspan="1">
           <div id="Duracao">
            </div>
@@ -1750,7 +1860,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row100">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row104">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Inicio" colspan="3" rowspan="1">
           <div id="Inicio">
            </div>
@@ -1768,13 +1878,13 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row101">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row105">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Complemento" colspan="8" rowspan="1">
           <div id="Complemento">
            </div>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row102">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row106">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Entregas_Esperadas" colspan="3" rowspan="1">
           <div id="Entregas_Esperadas">
            </div>
@@ -1792,7 +1902,7 @@
         <td>
          </td>
       </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row103">
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row107">
         <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Ficheiro1" colspan="3" rowspan="1">
           <div id="Ficheiro1">
            </div>
@@ -1804,82 +1914,6 @@
            </div>
           <div id="Ficheiro2_default_validator">
            </div>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-      </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row104">
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-      </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row105">
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-      </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row106">
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Salvar1 _MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_td_Salvar1" colspan="1" rowspan="1">
-          <div id="Salvar1">
-           </div>
-         </td>
-        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Proximo1 _MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_td_Proximo1" colspan="1" rowspan="1">
-          <div id="Proximo1">
-           </div>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-      </tr>
-      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row107">
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
-         </td>
-        <td>
          </td>
         <td>
          </td>
@@ -1904,13 +1938,91 @@
         <td>
          </td>
       </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row109">
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row110">
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Salvar1 _MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_td_Salvar1" colspan="1" rowspan="1">
+          <div id="Salvar1">
+           </div>
+         </td>
+        <td class="widget__MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Proximo1 _MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_td_Proximo1" colspan="1" rowspan="1">
+          <div id="Proximo1">
+           </div>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row111">
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+      </tr>
+      <tr class="_MGdXg1UVEeO8J8lQKn_cng__MGdYCVUVEeO8J8lQKn_cng_Row112">
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+        <td>
+         </td>
+      </tr>
     </table>
     <div>
        <div>
        </div>
     </div>
-  	
-  	<script type="text/javascript">
+  
+			
+		</div>
+		<script type="text/javascript">
 		var arrEls = [];
 		var arrPop = [];
 		
@@ -1932,6 +2044,30 @@
 			botaoAdicionar.bind("click", function(){
 				if (count <= camposCount) {
 					$(inputs[count]).parents(".bonita_form_entry").show();
+					count++;
+				}
+			});
+			
+		}
+		
+		function adicionarCamposTr(idBotaoAdicionar, classRow) {
+			//var classRow = $(classRow);
+			var botaoAdicionar = $(idBotaoAdicionar).find("button");
+			//var inputs = camposContainer.find("input");
+			
+			
+			var trs = $("." + classRow); 
+			trs.each(function(){
+				$(this).find(".bonita_form_entry").hide();
+			});
+			
+			var camposCount = trs.length; 
+			var count = 0;
+			
+			
+			botaoAdicionar.bind("click", function(){
+				if (count <= camposCount) {
+					$(trs[count]).find(".bonita_form_entry").show();
 					count++;
 				}
 			});
@@ -1992,23 +2128,39 @@
 		
 		function adicionarOutro(idWidget, idOutroWidget) {
 					
-					var outro = $(idOutroWidget);
-					outro.hide();
-					
-					$(idWidget).bind("change", function(){
-						val = $(this).val();
-						val = val.toLowerCase();
-						
-						if ($(this).is(":checked")) {
-							if (val == "outros" || val == "outras" || val == "outro" || val == "outra") {						
-								outro.show();
-							} 
-						} else {					
-							outro.hide().find("input").val("");						
-									
-							
-						}
-					})
+			var outro = $(idOutroWidget);
+			outro.hide();
+			
+			$(idWidget).bind("change", function(){
+				val = $(this).val();
+				val = val.toLowerCase();
+				
+				if ($(this).is(":checked")) {											
+						outro.show();					
+				} else {					
+					outro.hide().find("input").val("");		
+				}
+			})
+		}
+		
+		function exibeOculta(idCampo, idOutroCampo) {			
+			
+			var outroCampo = $(idOutroCampo);
+			outroCampo.hide();
+			
+			$("<a href='#'>[+]</div>").bind('click', function(e){
+				e.preventDefault();					
+				outroCampo.show();
+			}).insertAfter($(idCampo).find(".bonita_form_field"));
+			// botão remover
+			$("<a href='#'>[-]</div>").bind('click', function(e){
+				e.preventDefault();	
+				outroCampo.hide();
+				outroCampo.find("input").each(function(){ $(this).val(""); })
+			      	  .find("select").each(function(){ $(this).val([]); });
+			}).insertAfter($(idCampo).find(".bonita_form_field"));
+				
+			
 		}
 		
 		
@@ -2074,11 +2226,31 @@
 				// Somente leitura tamanho da amostra
 				$("#Tamanho_da_amostra").find('input').attr('readonly', 'readonly');
 				
+				// Revisao literatura 
+				$("#Desenho_estudo").find('input').bind("change", function(){
+					if ($(this).is(":checked") && $(this).attr('id') == "gwt-uid-9") {
+						$("#gwt-uid-15").attr('checked', true).next('label').addClass('checked');
+						$("#Envolv").find('input').attr('disabled', true);
+					} else {
+						$("#Envolv").find('input').attr('disabled', false);
+						$("#gwt-uid-15").attr('checked', false).next('label').removeClass('checked');
+					}					
+				});
+				
 				// Outros - Área de interesse
 				adicionarOutro("#gwt-uid-52", "#Outros_area_interesse");
 				adicionarOutro("#gwt-uid-35", "#Outros_areas_de_saude");
 				adicionarOutro("#gwt-uid-79", "#Fonte_financiamento_outra");
 				adicionarOutro("#gwt-uid-74", "#Fonte_financiamento_industria");
+				adicionarOutro("#gwt-uid-73", "#Campo_de_texto1");
+				adicionarOutro("#gwt-uid-77", "#AgenciaFomento");
+				adicionarOutro("#gwt-uid-76", "#Ficheiro4");
+				
+				exibeOculta("#AgenciaFomento", "#Campo_de_texto2");
+				exibeOculta("#Fonte_financiamento_industria", "#Fonte_Financiamento_Industria_Outra");
+				
+				
+				 
 				
 				// Varre trs e adiciona respectivas classes
 				for (var i = 0; i <= document.getElementsByTagName("tr").length; i++) {
@@ -2086,11 +2258,14 @@
 					if (i >= 28 && i <= 47) {
 						tr.className += " row_pesq"; 
 					}
-					if (i >= 66 && i <= 75) {
+					if (i >= 49 && i <= 51) {
+						tr.className += " row_colab"; 
+					}
+					if (i >= 69 && i <= 78) {
 						tr.className += " row_dep";
 					}
 					
-					if (i >= 54 && i <= 63) {
+					if (i >= 57 && i <= 66) {
 						tr.className += " row_centro";
 					}					
 				}
@@ -2098,6 +2273,7 @@
 				// Campos
 				adicionarCampos("#AdicionarPesquisador", "row_pesq", 2);
 				adicionarCampos("#Botao_simples1", "row_pesq", 3);
+				adicionarCamposTr("#Botao_simples3", "row_colab");
 				
 				
 				adicionarCamposSelect("#AdicionarDepartamentoEnvolvido", "row_dep", 2);
@@ -2139,7 +2315,5 @@
 			}, 1000);			
 		});	
 	</script>
-			
-		</div>
 	</body>
 </html>
